@@ -58,7 +58,7 @@ h1, h2, h3 {
 }
 
 a {
-    color: #f4f7f7;
+    color: $secondary-color;
     text-decoration: none;
 }
 
@@ -78,7 +78,7 @@ footer {
             padding: 3em;
             
             &:hover {
-                color: #f67280;
+                color: $third-color;
                 @include easeOut();
             }
         }

@@ -1,5 +1,6 @@
 @import 'config';
 @import 'menu';
+@import 'mobile';
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400');
 
 * {
@@ -26,7 +27,14 @@ main {
     padding: 4rem;
 
     &#home {
-        overflow: hidden;
+        // left: 0;
+        // line-height: 200px;
+        // margin: auto;
+        // margin-top: -400px;
+        // position: absolute;
+        // top: 50%;
+        // width: 100%;
+
     }
 }
 
@@ -35,14 +43,13 @@ h1, h2, h3 {
     font-weight: 100;
 
     &.lg-heading {
+        padding-top: 2rem;
         font-size: 7rem;
         height: 100%;
         width: 100%;
         display: flex;
         justify-content: center;
-        align-items: center;
-        // animation-name: fade-in;
-        // animation-duration: 5s;
+        align-items: bottom;
     }
 
     &.sm-heading {
@@ -67,7 +74,7 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
-    padding: 5rem;
+    padding: 3rem;
     justify-content: center;
     display: flex;
 
@@ -75,7 +82,7 @@ footer {
         margin-top: 1rem;
 
         a {
-            padding: 3em;
+            padding: 2em;
             
             &:hover {
                 color: $third-color;

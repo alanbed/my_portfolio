@@ -1,6 +1,5 @@
 @import 'config';
 @import 'menu';
-@import 'mobile';
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400');
 
 * {
@@ -25,6 +24,7 @@ body {
 
 main {
     padding: 4rem;
+    min-height: calc(100vh - 60px);
 
     &#home {
         // left: 0;
@@ -70,13 +70,14 @@ a {
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     right: 0;
     bottom: 0;
     left: 0;
     padding: 3rem;
     justify-content: center;
     display: flex;
+
 
     .icons {
         margin-top: 1rem;
@@ -92,8 +93,66 @@ footer {
     }
 }
 
+#main-footer {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 3rem;
+    justify-content: center;
+    display: flex;
+}
+
 // @keyframes fade-in {
 //     0% {opacity: 0;}
 //     66% {opacity: 0.3;}
 //     100% {opacity: 1;}
 // }
+
+.about-info {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:
+        'bioimage bio bio'
+        'job1 job2 job3';
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.bio-image {
+    grid-area: bioimage;
+    margin: auto;
+    height: 380px;
+      background-size: cover;
+      display: block;
+      border-top-left-radius: 100px;
+      -webkit-border-top-left-radius: 100px;
+      -moz-border-top-left-radius: 100px;
+      border-bottom-right-radius: 100px;
+      -webkit-border-bottom-right-radius: 100px;
+      -moz-border-bottom-right-radius: 100px;
+      border: solid 3px $secondary-color;
+}
+
+.bio {
+    grid-area: bio;
+}
+
+.job-1 {
+    grid-area: job1
+}
+
+.job-2 {
+    grid-area: job2
+}
+
+.job-3 {
+    grid-area: job3
+}
+
+.job {
+    background: lighten($primary-color, 4);
+    padding: 0.5rem;
+    border-bottom: $secondary-color 5px solid;
+}
+
+@import 'mobile';

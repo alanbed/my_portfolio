@@ -1,9 +1,13 @@
 @include mediaXl {
-
+    .projects {
+        grid-template-columns: (4, 1fr);
+    }
 }
 
 @include mediaLg {
-
+    .projects {
+        grid-template-columns: (2, 1fr);
+    }
 }
 
 @include mediaMd {
@@ -60,6 +64,10 @@
 
         grid-template-columns: 1fr;
     }
+
+    .projects {
+        grid-template-columns: (2, 1fr);
+    }
 }
 
 @include mediaSm {
@@ -79,4 +87,8 @@
             font-size: 2rem;
         }
     }
+
+     .projects {
+         grid-template-columns: 1fr;
+     }
 }

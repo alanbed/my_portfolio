@@ -1,12 +1,30 @@
 @include mediaXl {
+    main {
+        align-items: center;
+        text-align: center;
+    }
+
     .projects {
         grid-template-columns: (4, 1fr);
+    }
+
+    textarea {
+        width: 50em;
     }
 }
 
 @include mediaLg {
+    main {
+         align-items: center;
+         text-align: center;
+    }
+
     .projects {
         grid-template-columns: (2, 1fr);
+    }
+
+    textarea {
+        width: 40em;
     }
 }
 
@@ -68,6 +86,10 @@
     .projects {
         grid-template-columns: (2, 1fr);
     }
+
+    textarea {
+        width: 30em;
+    }
 }
 
 @include mediaSm {
@@ -91,4 +113,8 @@
      .projects {
          grid-template-columns: 1fr;
      }
+
+    textarea {
+        width: 20em;
+    }     
 }

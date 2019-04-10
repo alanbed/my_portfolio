@@ -244,13 +244,35 @@ footer {
 .btn-light {
   background: #1f4e5f; }
 
+input[type=email] {
+  width: 20em; }
+
+textarea {
+  height: 8em;
+  font-family: "Montserrat", serif; }
+
+button[type=submit]:hover {
+  background-color: #1f4e5f;
+  color: #f4f7f7;
+  border-radius: 4px; }
+
 @media screen and (min-width: 1171px) {
+  main {
+    align-items: center;
+    text-align: center; }
   .projects {
-    grid-template-columns: 4, 1fr; } }
+    grid-template-columns: 4, 1fr; }
+  textarea {
+    width: 50em; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
+  main {
+    align-items: center;
+    text-align: center; }
   .projects {
-    grid-template-columns: 2, 1fr; } }
+    grid-template-columns: 2, 1fr; }
+  textarea {
+    width: 40em; } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -283,7 +305,9 @@ footer {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
   .projects {
-    grid-template-columns: 2, 1fr; } }
+    grid-template-columns: 2, 1fr; }
+  textarea {
+    width: 30em; } }
 
 @media screen and (max-width: 500px) {
   main#home h1, h2 {
@@ -296,4 +320,6 @@ footer {
     main h2.sm-heading {
       font-size: 2rem; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  textarea {
+    width: 20em; } }

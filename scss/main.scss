@@ -204,4 +204,24 @@ footer {
     background: #1f4e5f;
 }
 
+label {
+
+}
+
+input[type=email] {
+    width: 20em;
+}
+
+textarea {
+    height: 8em;
+    font-family: $montserrat;
+}
+
+button[type=submit]:hover {
+    background-color: #1f4e5f;
+    color: $secondary-color;
+    border-radius: 4px;
+    
+}
+
 @import 'mobile';

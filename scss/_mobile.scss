@@ -4,6 +4,17 @@
         text-align: center;
     }
 
+    .about-info {
+        grid-template-areas:
+            'bioimage'
+            'bio'
+            'job1'
+            'job2'
+            'job3';
+
+        grid-template-columns: 1fr;
+    }
+
     .projects {
         grid-template-columns: (4, 1fr);
     }
@@ -22,6 +33,17 @@
     .projects {
         grid-template-columns: (2, 1fr);
     }
+
+     .about-info {
+         grid-template-areas:
+             'bioimage'
+             'bio'
+             'job1'
+             'job2'
+             'job3';
+
+         grid-template-columns: 1fr;
+     }
 
     textarea {
         width: 40em;

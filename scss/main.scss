@@ -172,17 +172,18 @@ footer {
     padding: 0.5rem;
     border: 0;
     margin-bottom: 0.3rem;
+    border-radius: 8px;
     &:hover {
         background: lighten(#1f4e5f, 12);
     }
 }
 
-.btn-dark {
+.btn-git {
     @extend .btn;
     background: #1f4e5f;
 }
 
-.btn-light {
+.btn-prj {
     @extend .btn;
     background: #1f4e5f;
 }

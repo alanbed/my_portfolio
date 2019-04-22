@@ -192,16 +192,7 @@ footer {
 .bio {
   grid-area: bio; }
 
-.job-1 {
-  grid-area: job1; }
-
-.job-2 {
-  grid-area: job2; }
-
-.job-3 {
-  grid-area: job3; }
-
-.job {
+p {
   background: #b7d6d7;
   padding: 0.5rem;
   border-bottom: #f4f7f7 5px solid; }

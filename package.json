@@ -3,13 +3,16 @@
   "version": "1.0.0",
   "description": "My Portfolio",
   "main": "index.js",
+  "homepage": "https://alanbed.github.io/my_portfolio",
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0",
     "typed.js": "^2.0.10"
   },
   "devDependencies": {},
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Alan Bedoya",
   "license": "ISC"

@@ -146,12 +146,6 @@ p {
         -webkit-border-bottom-right-radius: 100px;
         -moz-border-bottom-right-radius: 100px;
         border: solid 3px $secondary-color;
-
-        &:hover {
-            opacity: 0.5;
-            border-color: lighten($third-color, 2);
-            @include easeOut;
-        }
     }
 }
 

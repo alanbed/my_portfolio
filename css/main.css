@@ -215,10 +215,6 @@ p {
     -webkit-border-bottom-right-radius: 100px;
     -moz-border-bottom-right-radius: 100px;
     border: solid 3px #f4f7f7; }
-    .projects img:hover {
-      opacity: 0.5;
-      border-color: #f28787;
-      transition: all 0.6s ease-out; }
 
 .btn, .btn-git, .btn-prj {
   display: block;

@@ -97,6 +97,9 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
+.nav-item:nth-child(5) {
+  transition-delay: 0.5s; }
+
 * {
   box-sizing: border-box; }
 
@@ -172,7 +175,7 @@ footer {
   display: grid;
   grid-gap: 10px;
   grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
-  grid-template-columns: repeat(3, 1fr); }
+  grid-template-columns: repeat(2, 1fr); }
 
 .bio-image {
   grid-area: bioimage;
@@ -198,8 +201,8 @@ p {
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 0.7rem; }
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5rem; }
   .projects img {
     position: relative;
     height: 80%;
@@ -207,7 +210,7 @@ p {
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    display: block;
+    display: inline-flex;
     border-top-left-radius: 100px;
     -webkit-border-top-left-radius: 100px;
     -moz-border-top-left-radius: 100px;
@@ -247,11 +250,16 @@ button[type=submit]:hover {
   main {
     align-items: center;
     text-align: center; }
+  .menu-btn {
+    right: 20px; }
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
   .projects {
-    grid-template-columns: 4, 1fr; }
+    grid-template-columns: repeat(2, 1fr); }
+    .projects img {
+      height: 20vw;
+      width: 30vw; }
   textarea {
     width: 50em; } }
 
@@ -259,8 +267,13 @@ button[type=submit]:hover {
   main {
     align-items: center;
     text-align: center; }
+  .menu-btn {
+    right: 20px; }
   .projects {
-    grid-template-columns: 2, 1fr; }
+    grid-template-columns: repeat(1, 1fr); }
+    .projects img {
+      width: 70vw;
+      height: 40vw; }
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
@@ -275,6 +288,8 @@ button[type=submit]:hover {
       font-size: 5rem; }
     main h2.sm-heading {
       font-size: 3rem; }
+  .menu-btn {
+    right: 20px; }
   ul.menu-nav, div.menu-branding {
     float: none;
     width: 100%;
@@ -298,7 +313,10 @@ button[type=submit]:hover {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
   .projects {
-    grid-template-columns: 2, 1fr; }
+    grid-template-columns: 1fr; }
+    .projects img {
+      width: 70vw;
+      height: 40vw; }
   textarea {
     width: 30em; } }
 
@@ -312,7 +330,14 @@ button[type=submit]:hover {
       font-size: 3rem; }
     main h2.sm-heading {
       font-size: 2rem; }
+  .menu-btn {
+    right: 20px; }
+  .bio-image {
+    height: 250px; }
   .projects {
     grid-template-columns: 1fr; }
+    .projects img {
+      width: 60vw;
+      height: 40vw; }
   textarea {
     width: 20em; } }

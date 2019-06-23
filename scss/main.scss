@@ -98,7 +98,7 @@ footer {
     grid-template-areas:
         'bioimage bio bio'
         'job1 job2 job3';
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .bio-image {
@@ -128,8 +128,8 @@ p {
 
 .projects {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 0.7rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5rem;
 
     img {
         position: relative;
@@ -138,7 +138,7 @@ p {
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: cover;
-        display: block;
+        display: inline-flex;
         border-top-left-radius: 100px;
         -webkit-border-top-left-radius: 100px;
         -moz-border-top-left-radius: 100px;
@@ -152,6 +152,7 @@ p {
 
 .btn {
     display: block;
+
     padding: 0.5rem;
     border: 0;
     margin-bottom: 0.3rem;

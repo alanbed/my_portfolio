@@ -4,6 +4,10 @@
         text-align: center;
     }
 
+    .menu-btn{
+        right: 20px;
+    }
+
     .about-info {
         grid-template-areas:
             'bioimage'
@@ -16,7 +20,12 @@
     }
 
     .projects {
-        grid-template-columns: (4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        img {
+            height: 20vw;
+            width: 30vw;
+        
+        }
     }
 
     textarea {
@@ -30,8 +39,16 @@
          text-align: center;
     }
 
+    .menu-btn {
+        right: 20px;
+    }
+
     .projects {
-        grid-template-columns: (2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        img {
+            width: 70vw;
+            height: 40vw;
+        }
     }
 
      .about-info {
@@ -63,6 +80,10 @@
         h2.sm-heading {
             font-size: 3rem;
         }
+    }
+
+    .menu-btn {
+        right: 20px;
     }
 
     ul.menu-nav, div.menu-branding {
@@ -106,7 +127,11 @@
     }
 
     .projects {
-        grid-template-columns: (2, 1fr);
+        grid-template-columns: 1fr;
+        img {
+            width: 70vw;
+            height: 40vw;
+        }
     }
 
     textarea {
@@ -132,8 +157,21 @@
         }
     }
 
+    .menu-btn {
+        right: 20px;
+    }
+
+    .bio-image {
+        height: 250px;
+    }
+
      .projects {
          grid-template-columns: 1fr;
+        
+         img {
+             width: 60vw;
+             height: 40vw;
+         }
      }
 
     textarea {

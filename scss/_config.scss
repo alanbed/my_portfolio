@@ -21,13 +21,13 @@ $third-color: #f17e7e;
 }
 
 @mixin mediaLg {
-    @media screen and (min-width: 769px) and (max-width: 1170px) {
+    @media screen and (min-width: 769px) and (max-width: 1440px) {
         @content;
     }
 }
 
 @mixin mediaXl{
-    @media screen and (min-width: 1171px) {
+    @media screen and (min-width: 1441px) {
         @content;
     }
 }

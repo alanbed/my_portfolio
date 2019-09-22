@@ -1,11 +1,61 @@
 @include mediaXl {
+    main#home {
+        h1.lg-heading{
+            margin-top: 1vh;
+        }
+
+        h2.sm-heading {
+            padding-top: 7rem;
+        }
+    }
+
     main {
         align-items: center;
         text-align: center;
+
+        h1.lg-heading {
+            font-size: 8rem;
+        }
+
+        h2.sm-heading {
+            font-size: 6rem;
+        }
     }
 
     .menu-btn{
         right: 20px;
+        top: 50px;
+
+        .btn-line {
+            width: 5rem;
+            height: 8px;
+            margin: 0 20px 20px 0;
+        }
+
+        &.close {
+            transform: rotate(180deg);
+    
+            .btn-line {
+                &:nth-child(1) {
+                    transform: rotate(45deg) translate(20px, 20px);
+                }
+    
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+    
+                &:nth-child(3) {
+                    transform: rotate(-45deg) translate(15px, -20px);
+                }
+            }
+        }
+    }
+
+    .bio {
+        p{
+            margin-left: 20%;
+            margin-right: 20%;
+        }
     }
 
     .about-info {
@@ -21,21 +71,46 @@
 
     .projects {
         grid-template-columns: repeat(2, 1fr);
+
         img {
-            height: 20vw;
+            height: 15vw;
             width: 30vw;
         }
+
+        p, a {
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+    } 
+
+    form {
+        padding-top: 7rem;
     }
 
     textarea {
-        width: 50em;
+        width: 70em;
     }
 }
 
 @include mediaLg {
+    main#home {
+        h1.lg-heading{
+            margin-top: 1vh;
+        }
+
+        h2.sm-heading {
+            padding-top: 7rem;
+        }
+    }
+
     main {
          align-items: center;
          text-align: center;
+
+         h1.lg-heading {
+            font-size: 5rem;
+        }
     }
 
     .menu-btn {
@@ -43,30 +118,49 @@
     }
 
     .projects {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         img {
-            width: 70vw;
-            height: 40vw;
+            width: 40vw;
+            height: 20vw;
         }
     }
 
      .about-info {
          grid-template-areas:
              'bioimage'
-             'bio'
-             'job1'
-             'job2'
-             'job3';
+             'bio';
 
          grid-template-columns: 1fr;
+         grid-row-end: span 3;
      }
 
+     .bio {
+         p{
+             margin-left: 50px;
+             margin-right: 50px;
+         }
+     }
+
+    form {
+        padding-top: 5rem;
+    }
+
     textarea {
-        width: 40em;
+        width: 60em;
     }
 }
 
 @include mediaMd {
+    main#home {
+        h1.lg-heading{
+            margin-top: 1vh;
+        }
+
+        h2.sm-heading {
+            padding-top: 8rem;
+        }
+    }
+
     main {
         align-items: center;
         text-align: center;
@@ -78,6 +172,7 @@
 
         h2.sm-heading {
             font-size: 3rem;
+            padding-top: 2rem;
         }
     }
 
@@ -134,18 +229,24 @@
     }
 
     textarea {
-        width: 30em;
+        width: 50em;
     }
 }
 
 @include mediaSm {
-    main#home h1, h2 {
-        margin-top: 1vh;
+    main#home {
+        h1.lg-heading{
+            margin-top: 1vh;
+        }
+
+        h2.sm-heading {
+            padding-top: 8rem;
+        }
     }
     main {
         align-items: center;
         text-align: center;
-
+        padding: 2rem;
 
         h1.lg-heading {
             font-size: 3rem;
@@ -153,11 +254,17 @@
 
         h2.sm-heading {
             font-size: 2rem;
+            padding-top: 2rem;
+        }
+    }
+    .menu{
+        .nav-link {
+            font-size: 20px;
         }
     }
 
     .menu-btn {
-        right: 20px;
+        right: 3px;
     }
 
     .bio-image {
@@ -175,5 +282,9 @@
 
     textarea {
         width: 20em;
-    }     
+    }   
+    
+    #main-footer {
+        padding: 1rem;
+    }
 }

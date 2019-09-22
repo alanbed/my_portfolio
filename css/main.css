@@ -167,15 +167,14 @@ footer {
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 3rem;
+  padding: 2rem;
   justify-content: center;
   display: flex; }
 
 .about-info {
   display: grid;
   grid-gap: 10px;
-  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
-  grid-template-columns: repeat(2, 1fr); }
+  grid-template-columns: repeat(1, 1fr); }
 
 .bio-image {
   grid-area: bioimage;
@@ -246,48 +245,94 @@ button[type=submit]:hover {
   color: #f4f7f7;
   border-radius: 4px; }
 
-@media screen and (min-width: 1171px) {
+@media screen and (min-width: 1441px) {
+  main#home h1.lg-heading {
+    margin-top: 1vh; }
+  main#home h2.sm-heading {
+    padding-top: 7rem; }
   main {
     align-items: center;
     text-align: center; }
+    main h1.lg-heading {
+      font-size: 8rem; }
+    main h2.sm-heading {
+      font-size: 6rem; }
   .menu-btn {
-    right: 20px; }
+    right: 20px;
+    top: 50px; }
+    .menu-btn .btn-line {
+      width: 5rem;
+      height: 8px;
+      margin: 0 20px 20px 0; }
+    .menu-btn.close {
+      transform: rotate(180deg); }
+      .menu-btn.close .btn-line:nth-child(1) {
+        transform: rotate(45deg) translate(20px, 20px); }
+      .menu-btn.close .btn-line:nth-child(2) {
+        opacity: 0; }
+      .menu-btn.close .btn-line:nth-child(3) {
+        transform: rotate(-45deg) translate(15px, -20px); }
+  .bio p {
+    margin-left: 20%;
+    margin-right: 20%; }
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); }
     .projects img {
-      height: 20vw;
+      height: 15vw;
       width: 30vw; }
+    .projects p, .projects a {
+      margin-left: 10%;
+      margin-right: 10%; }
+  form {
+    padding-top: 7rem; }
   textarea {
-    width: 50em; } }
+    width: 70em; } }
 
-@media screen and (min-width: 769px) and (max-width: 1170px) {
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+  main#home h1.lg-heading {
+    margin-top: 1vh; }
+  main#home h2.sm-heading {
+    padding-top: 7rem; }
   main {
     align-items: center;
     text-align: center; }
+    main h1.lg-heading {
+      font-size: 5rem; }
   .menu-btn {
     right: 20px; }
   .projects {
-    grid-template-columns: repeat(1, 1fr); }
+    grid-template-columns: repeat(2, 1fr); }
     .projects img {
-      width: 70vw;
-      height: 40vw; }
+      width: 40vw;
+      height: 20vw; }
   .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
-    grid-template-columns: 1fr; }
+    grid-template-areas: 'bioimage' 'bio';
+    grid-template-columns: 1fr;
+    grid-row-end: span 3; }
+  .bio p {
+    margin-left: 50px;
+    margin-right: 50px; }
+  form {
+    padding-top: 5rem; }
   textarea {
-    width: 40em; } }
+    width: 60em; } }
 
 @media screen and (max-width: 768px) {
+  main#home h1.lg-heading {
+    margin-top: 1vh; }
+  main#home h2.sm-heading {
+    padding-top: 8rem; }
   main {
     align-items: center;
     text-align: center; }
     main h1.lg-heading {
       font-size: 5rem; }
     main h2.sm-heading {
-      font-size: 3rem; }
+      font-size: 3rem;
+      padding-top: 2rem; }
   .menu-btn {
     right: 20px; }
   ul.menu-nav, div.menu-branding {
@@ -318,20 +363,26 @@ button[type=submit]:hover {
       width: 70vw;
       height: 40vw; }
   textarea {
-    width: 30em; } }
+    width: 50em; } }
 
 @media screen and (max-width: 500px) {
-  main#home h1, h2 {
+  main#home h1.lg-heading {
     margin-top: 1vh; }
+  main#home h2.sm-heading {
+    padding-top: 8rem; }
   main {
     align-items: center;
-    text-align: center; }
+    text-align: center;
+    padding: 2rem; }
     main h1.lg-heading {
       font-size: 3rem; }
     main h2.sm-heading {
-      font-size: 2rem; }
+      font-size: 2rem;
+      padding-top: 2rem; }
+  .menu .nav-link {
+    font-size: 20px; }
   .menu-btn {
-    right: 20px; }
+    right: 3px; }
   .bio-image {
     height: 250px; }
   .projects {
@@ -340,4 +391,6 @@ button[type=submit]:hover {
       width: 60vw;
       height: 40vw; }
   textarea {
-    width: 20em; } }
+    width: 20em; }
+  #main-footer {
+    padding: 1rem; } }

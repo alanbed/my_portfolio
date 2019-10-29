@@ -16,14 +16,14 @@ body {
     background: $primary-color;
     height: 100%;
     margin: 0;
-    font-family: $montserrat;
+    font-family: $montserrat !important;
     font-weight: 100;
     line-height: 1.5;
     animation: 1.5s slideUp;
 }
 
 main {
-    padding: 4rem;
+    padding: 2rem;
     min-height: calc(100vh - 60px);
 }
 
@@ -32,7 +32,7 @@ h1, h2, h3 {
     font-weight: 100;
 
     &.lg-heading {
-        padding-top: 2rem;
+        padding-top: 4rem;
         font-size: 7rem;
         height: 100%;
         width: 100%;
@@ -42,13 +42,13 @@ h1, h2, h3 {
     }
 
     &.sm-heading {
+        padding-top: 2rem;
         font-size: 3rem;
         height: 100%;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 2rem;
         padding: 0.2rem 1rem;
     }
 }
@@ -63,7 +63,7 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
-    padding: 3rem;
+    padding: 2rem;
     justify-content: center;
     display: flex;
 
@@ -88,39 +88,57 @@ footer {
     bottom: 0;
     left: 0;
     padding: 2rem;
+    padding-top: 4rem;
     justify-content: center;
     display: flex;
 }
 
+main#about {
+   p {
+       padding: 1em;
+   } 
+}
+
 .about-info {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    justify-content: center;
+    padding-top: 2vw;
+    margin-right: 10vw;
+
+    .bio-image {
+    
+        margin-left: 15vw;
+        height: 380px;
+          background-size: cover;
+          display: block;
+          border-top-left-radius: 100px;
+          -webkit-border-top-left-radius: 100px;
+          -moz-border-top-left-radius: 100px;
+          border-bottom-right-radius: 100px;
+          -webkit-border-bottom-right-radius: 100px;
+          -moz-border-bottom-right-radius: 100px;
+          border: solid 10px $secondary-color;
+    }
+
+    .bio {
+        padding-top: 5vw;
+    }
 }
 
-.bio-image {
-    grid-area: bioimage;
-    margin: auto;
-    height: 380px;
-      background-size: cover;
-      display: block;
-      border-top-left-radius: 100px;
-      -webkit-border-top-left-radius: 100px;
-      -moz-border-top-left-radius: 100px;
-      border-bottom-right-radius: 100px;
-      -webkit-border-bottom-right-radius: 100px;
-      -moz-border-bottom-right-radius: 100px;
-      border: solid 3px $secondary-color;
-}
-
-.bio {
-    grid-area: bio;
-}
 
 p {
     background: lighten($primary-color, 4);
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
+    margin-bottom: 10px;
+}
+
+main#work {
+    p {
+        display: inline-block;
+        height: 7em;
+        overflow: scroll;
+    }
 }
 
 .projects {
@@ -130,8 +148,8 @@ p {
 
     img {
         position: relative;
-        height: 80%;
-        width: 80%;
+        height: 60%;
+        width: 60%;
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: cover;
@@ -143,21 +161,28 @@ p {
         -webkit-border-bottom-right-radius: 100px;
         -moz-border-bottom-right-radius: 100px;
         border: solid 3px $secondary-color;
-        
     }
 }
 
 .btn {
     display: block;
-
     padding: 0.5rem;
-    border: 0;
-    margin-bottom: 0.3rem;
-    border-radius: 8px;
+    border: none;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px #193047;
+    overflow: hidden;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 1em;
     &:hover {
-        background: lighten(#1f4e5f, 12);
+        background: $third-color;
+        box-shadow: 0px 2px 10px 5px lighten(#1f4e5f, 12);
+        
     }
 }
+
+.btn:focus { outline:0; }
 
 .btn-git {
     @extend .btn;
@@ -171,6 +196,7 @@ p {
 
 input[type=email] {
     width: 20em;
+    margin-bottom: 20px;
 }
 
 textarea {
@@ -178,11 +204,25 @@ textarea {
     font-family: $montserrat;
 }
 
-button[type=submit]:hover {
-    background-color: #1f4e5f;
+button[type=submit] {
     color: $secondary-color;
+    background-color: #1f4e5f;
+    font-family: $montserrat;
+    padding: 0.5rem;
+    border: none;
+    margin-bottom: 0.5rem;
     border-radius: 4px;
-    
+    box-shadow: 0 5px 15px #193047;
+    overflow: hidden;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 10px;
+    &:hover {
+        background: $third-color;
+        box-shadow: 0px 2px 10px 5px lighten(#1f4e5f, 12);
+        
+    }
 }
 
 @import 'mobile';

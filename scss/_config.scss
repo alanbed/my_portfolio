@@ -8,20 +8,32 @@ $third-color: #ac8daf;
     transition: all 0.6s ease-out;
 }
 
+@mixin mediaXsm {
+    @media screen and (max-width: 340px) {
+        @content;
+    }
+}
+
 @mixin mediaSm {
-    @media screen and (max-width: 500px) {
+    @media screen and (min-width: 359px) and (max-width: 500px) {
         @content;
     }
 }
 
 @mixin mediaMd {
-    @media screen and (min-width: 768px) and (max-width: 1023px) {
+    @media screen and (min-width: 768px) and (max-width: 1022px) {
+        @content;
+    }
+}
+
+@mixin mediaLaptop {
+    @media screen and (min-width: 1023px) and (max-width: 1024px) {
         @content;
     }
 }
 
 @mixin mediaLg {
-    @media screen and (min-width: 1024px) and (max-width: 1440px) {
+    @media screen and (min-width: 1025px) and (max-width: 1440px) {
         @content;
     }
 }

@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+*:focus {
+    outline: none !important;
+}
+
 header {
     position: fixed;
     z-index: 2;
@@ -33,7 +37,7 @@ h1, h2, h3 {
 
     &.lg-heading {
         padding-top: 4rem;
-        font-size: 7rem;
+        font-size: 4rem;
         height: 100%;
         width: 100%;
         display: flex;
@@ -43,7 +47,7 @@ h1, h2, h3 {
 
     &.sm-heading {
         padding-top: 2rem;
-        font-size: 3rem;
+        font-size: 2.5rem;
         height: 100%;
         width: 100%;
         display: flex;
@@ -197,11 +201,21 @@ main#work {
 input[type=email] {
     width: 20em;
     margin-bottom: 20px;
+    border-radius: 4px;
+    border-style: none;
+    padding: 0.5rem;
+    outline: none;
 }
 
 textarea {
     height: 8em;
     font-family: $montserrat;
+    border-style: none;
+    border-radius: 4px;
+}
+
+input:focus, textarea:focus {
+    border-bottom: 4px solid $third-color;
 }
 
 button[type=submit] {
@@ -210,6 +224,7 @@ button[type=submit] {
     font-family: $montserrat;
     padding: 0.5rem;
     border: none;
+    margin-top: 1em;
     margin-bottom: 0.5rem;
     border-radius: 4px;
     box-shadow: 0 5px 15px #193047;
@@ -223,6 +238,10 @@ button[type=submit] {
         box-shadow: 0px 2px 10px 5px lighten(#1f4e5f, 12);
         
     }
+}
+
+input:focus, textarea:focus, button:focus {
+    outline: none;
 }
 
 @import 'mobile';

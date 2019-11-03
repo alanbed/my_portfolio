@@ -2,12 +2,10 @@
     main#home {
         h1.lg-heading{
             margin-top: 1vh;
-            font-size: 10rem;
         }
 
         h2.sm-heading {
             padding-top: 15rem !important;
-            font-size: 6rem;
         }
     }
 
@@ -38,7 +36,7 @@
         text-align: center;
 
         h1.lg-heading{
-            font-size: 10rem;
+            font-size: 8rem;
         }
 
         h2.sm-heading {
@@ -111,6 +109,10 @@
         padding: 1em;
     }
 
+    input:focus, textarea:focus {
+        border-bottom: 9px solid $third-color;
+    }
+
     footer {
         font-size: 2em;
     }
@@ -122,8 +124,13 @@
             margin-top: 1vh;
         }
 
+        h1.lg-heading2{
+            padding-bottom: 2rem;
+        }
+
         h2.sm-heading {
             padding-top: 6rem;
+            padding-bottom: 3rem;
         }
     }
 
@@ -138,7 +145,11 @@
          text-align: center;
 
          h1.lg-heading {
-            font-size: 5rem;
+            // font-size: 5rem;
+        }
+
+        h2.sm-heading {
+            // font-size: 3rem;
         }
     }
 
@@ -174,6 +185,90 @@
     }
 }
 
+@include mediaLaptop {
+    main#home {
+        h1.lg-heading{
+            margin-top: 1vh;
+        }
+
+        h2.sm-heading {
+            padding-top: 6rem;
+        }
+    }
+
+    main#work {
+        h2.sm-heading {
+            padding-bottom: 2rem;
+        }
+    }
+
+    main#about {
+        h2.sm-heading {
+            padding-bottom: 2rem;
+        }
+    }
+
+    nav {
+        a {
+            font-size: 12px;
+        }
+    }
+
+    main {
+        align-items: center;
+        text-align: center;
+        
+
+        h1.lg-heading {
+            font-size: 3rem;
+        }
+
+        h2.sm-heading {
+            font-size: 2rem;
+            padding-top: 2rem;
+
+        }
+    }
+
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+        img {
+            width: 40vw;
+            height: 20vw;
+        }
+    }
+
+     .about-info {
+        margin-right: 5vw;
+
+        .bio-image {
+            height: 19em;
+            margin-left: 5vw;
+        }
+
+        .bio {
+            padding-top: 1vw;
+
+            p {
+                margin-left: 3em;
+            }
+        }
+     }
+
+    form {
+        padding-top: 7em;
+        padding-bottom: 2em;
+    }
+
+    textarea {
+        width: 50em;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+}
+
 @include mediaMd {
     main#home {
         h1.lg-heading{
@@ -191,24 +286,30 @@
         }
     }
 
+    nav {
+        a {
+            font-size: 14px;
+        }
+    }
+
     main {
         align-items: center;
         text-align: center;
         
 
         h1.lg-heading {
-            font-size: 5rem;
+            font-size: 3rem;
         }
 
         h2.sm-heading {
-            font-size: 3rem;
+            font-size: 2rem;
             padding-top: 2rem;
         }
     }
 
     .about-info {
         flex-wrap: wrap;
-        margin-right: 0;
+        margin: 0;
         
         .bio-image {
             margin-left: 0;
@@ -230,6 +331,10 @@
     textarea {
         width: 50em;
     }
+
+    footer {
+        font-size: 0.8em;
+    }
 }
 
 @include mediaSm {
@@ -248,11 +353,11 @@
         padding: 3.5rem;
 
         h1.lg-heading {
-            font-size: 3rem;
+            font-size: 2.5rem;
         }
 
         h2.sm-heading {
-            font-size: 2rem;
+            font-size: 1.5rem;
             padding-top: 2rem;
             padding-bottom: 2rem;
         }
@@ -293,6 +398,77 @@
     textarea {
         width: 20em;
     }   
+    
+    #main-footer {
+        padding: 1rem;
+    }
+}
+
+@include mediaXsm {
+    main#home {
+        h1.lg-heading{
+            padding-top: 1vh;
+        }
+
+        h2.sm-heading {
+            padding-top: 5rem;
+        }
+    }
+    main {
+        align-items: center;
+        text-align: center;
+        padding: 3.5rem;
+
+        h1.lg-heading {
+            font-size: 2.5rem;
+        }
+
+        h2.sm-heading {
+            font-size: 1.5rem;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+    }
+    nav{
+        a {
+            font-size: 7px;
+            padding: 8px 8px; 
+            margin: 0px 4px;
+            position: relative;
+        }
+    }
+
+   .about-info {
+       flex-wrap: wrap;
+       margin-right: 0;
+       
+       .bio-image {
+           height: 19em;
+           margin-left: 0;
+       }
+
+       .bio {
+           padding-top: 3em;
+       }
+   }
+
+     .projects {
+         grid-template-columns: 1fr;
+        
+         img {
+             width: 70vw;
+             height: 50vw;
+             border: solid 4px;
+         }
+     }
+
+    textarea {
+        width: 20em;
+    } 
+    
+    footer {
+        font-size: 12px;
+    }
     
     #main-footer {
         padding: 1rem;

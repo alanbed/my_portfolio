@@ -15,7 +15,7 @@ $third-color: #ac8daf;
 }
 
 @mixin mediaSm {
-    @media screen and (min-width: 359px) and (max-width: 500px) {
+    @media screen and (min-width: 359px) and (max-width: 767px) {
         @content;
     }
 }

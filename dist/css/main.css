@@ -425,9 +425,10 @@ input:focus, textarea:focus, button:focus {
   footer {
     font-size: 0.8em; } }
 
-@media screen and (min-width: 359px) and (max-width: 500px) {
+@media screen and (min-width: 359px) and (max-width: 767px) {
   main#home h1.lg-heading {
-    padding-top: 1vh; }
+    padding-top: 1vh;
+    margin-bottom: 2vh; }
   main#home h2.sm-heading {
     padding-top: 5rem; }
   main {
@@ -435,9 +436,9 @@ input:focus, textarea:focus, button:focus {
     text-align: center;
     padding: 3.5rem; }
     main h1.lg-heading {
-      font-size: 2.5rem; }
+      font-size: 3rem; }
     main h2.sm-heading {
-      font-size: 1.5rem;
+      font-size: 2rem;
       padding-top: 2rem;
       padding-bottom: 2rem; }
   nav a {
